@@ -1,17 +1,16 @@
-var weight=50;
-var height=160;
-var bmi=weight/((height/100)**2);
+ //var weight=50;
+//var height=160;
+//var bmi=weight/((height/100)**2);
 
-console.log("Hello!Your BMI value is"+ bmi)
+//console.log("Hello!Your BMI value is"+ bmi)
 
-function calcBMI(){
+function calcBMI() {
     //var weight=50;
     var height=
-    Number(document.getElementsById("height").value);
+    Number(document.getElementById("height").value);
     var weight=
     document.getElementById("weight").value;
-    var bmi=weight/((height/100)**2);
-    document.getElementById("bmi").innerHTML=bmi;
-    console.log("Hello, Your BMI is:" + bmi);
+    var BMI=weight/((height/100)**2);
+    document.getElementById("BMI").innerHTML=BMI;
+    console.log("Hello, Your BMI is:" + BMI);
 }
-IPO
