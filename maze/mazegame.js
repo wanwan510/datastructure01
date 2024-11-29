@@ -1,4 +1,4 @@
-var MAZE = [
+var MAZE = [//0=paths,1=walls
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     [1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1],
     [1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1],
@@ -36,19 +36,19 @@ function go(){
             step = new Point(step.row-1, step.col);
             MAZE[step.row][step.col]=2;
             Stack.push(step);
-        }else if(MAZE[step.row][step.col] ==)
+        }else if(MAZE[step.row][step.col] == 0)
         { //down
             step=new point(step.row, step.col);
             MAZE[step.row][step.col]
             stack.push(step);   
 
-        }else if(MAZE[step.row][step.col] ==){//left
+        }else if(MAZE[step.row][step.col] == 0){//left
             step = new Point(step.row-1, step.col);
             MAZE[step.row][step.col]=2;
             Stack.push(step);
         }
 
-        }else if(MAZE[step.row][step.col] ==){//right
+        }else if(MAZE[step.row][step.col] == 0){//right
             step = new Point(step.row-1, step.col);
             MAZE[step.row][step.col]=2;
             Stack.push(step);
@@ -63,4 +63,3 @@ function go(){
         console.log("Done!");
      else 
         console.log("No solution!");
-}
